@@ -1,1 +1,17 @@
 /* Add CSS Styling */
+.click-one,
+.click-two {
+    font-size: 28px;
+    font-family: 'Helvetica', 'Times New Roman', sans-serif;
+}
+
+.click-one {
+    background-color: black;
+    color: white;
+}
+
+/* I guess 'color: black' is redundant */
+.click-two {
+    background-color: yellow;
+    color: black;
+}
