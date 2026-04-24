@@ -1,27 +1,43 @@
+/* Bit tricky doing this 'blind' */
 body {
   background: #eee;
   font-family: sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 16px;
 }
 
 .card {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 16px 1px 1px;
 }
 
 .title {
   background: #e3f4ff;
+  margin: 6px;
+  padding: 8px 4px;
 }
 
 .content {
   background: #e3f4ff;
+  margin: 6px;
+  padding: 16px 4px;
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;
+  margin: 6px;
+  padding: 8px 120px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  margin: 0 auto;
+  padding: 8px 32px;
 }
