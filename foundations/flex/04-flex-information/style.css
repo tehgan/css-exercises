@@ -2,14 +2,37 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+/* Seems to automatically fill width of window */
+.title {
+  font-size: 36px;
+  font-weight: 900;
+  /* Align text to center. */
+  text-align: center;
+  /* 32px of space requirement */
+  margin-bottom: 32px;
+}
+
 img {
   width: 100px;
   height: 100px;
 }
 
-.title {
-  font-size: 36px;
-  font-weight: 900;
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+/* Doesn't seem like this needs to be a flexbox? Layout's slightly nicer with flex, but functionally equivalent as-is. */
+.plant {
+  /*
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  */
+  max-width: 200px;
+  /* Could be specified in 'text' class, but it's also inherited */
+  text-align: center;
 }
 
 /* do not edit this footer */

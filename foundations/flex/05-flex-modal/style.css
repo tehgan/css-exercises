@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+  --padding-size: 16px;
+}
+
 html, body {
   height: 100%;
 }
@@ -20,6 +24,18 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: var(--padding-size);
+  display: flex;
+}
+
+.header-text {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .icon {
@@ -33,6 +49,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Ensure icon can't be squished */
+  flex-shrink: 0;
+  /* Margin between icon and rest of content, consistent with modal's padding (which makes a left margin) */
+  margin-right: var(--padding-size);
 }
 
 .close-button {
@@ -48,6 +68,10 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+}
+
+.text {
+  padding: 8px 0 16px;
 }
 
 button {

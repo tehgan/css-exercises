@@ -13,10 +13,19 @@ Flexbox is useful for laying out entire pages as well as the smaller components 
 ### Self Check
 
 - The header is at the top of the page, the footer is at the bottom, and they stay in place if you resize your screen.
+  - *Mostly*; footer won't overlap the content, so overflow begins at ~425px on my browser (3840x2160 1.5x scale)
 - The header and footer have padding.
+  - `padding: 0 16px` *(vertical, horizontal)*
+  - Links are `ul` so they had to have their `padding-left` explicitly set to `0` (`40` by-default in Firefox and Chromium)
 - The links in the header and footer are pushed to either side.
+  - `header` and `footer` are both `display: flex` with `justify-content: space-between`
 - There is space between the links in the header and footer.
+  - Both `header` and `footer` were given a `gap: 16px`
 - The footer has a light gray background (`#eeeeee`).
 - The logo, input and buttons are centered in the screen.
+  - `body` is `display: flex` with `flex-direction: column` and `justify-content: space-between`.
+  - 3 elements; `header`, `content`, and `footer`, so each element goes where they need to.
 - The buttons have an appropriate amount of padding.
+  - `padding: 8px`
 - There is space between the logo, input and buttons.
+  - `.content` has `gap: 16px`
